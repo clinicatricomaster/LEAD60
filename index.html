@@ -191,9 +191,12 @@
                         <button data-action="open-lead-modal" class="bg-tm-dourado hover:bg-tm-dourado-hover text-white font-bold py-2 px-4 rounded-md transition-colors"><i class="fas fa-plus mr-2"></i>Adicionar Lead</button>
                     </div>
                 </div>
-                 <div class="grid grid-cols-1 md:grid-cols-6 gap-4 mb-6 p-4 bg-white rounded-lg shadow no-print">
-                    <input type="date" id="leads-filtro-data-inicio" class="p-2 border rounded-md font-medium text-tm-texto-secundario">
-                    <input type="date" id="leads-filtro-data-fim" class="p-2 border rounded-md font-medium text-tm-texto-secundario">
+
+                <div class="mb-4">
+                     <input type="search" id="leads-filtro-busca" placeholder="🔎 Buscar por nome ou telefone..." class="w-full p-3 border rounded-lg shadow-sm font-medium text-tm-texto-secundario focus:ring-tm-dourado focus:border-tm-dourado">
+                </div>
+                 
+                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6 p-4 bg-white rounded-lg shadow no-print">
                     <select id="leads-filtro-origem" class="p-2 border rounded-md font-medium text-tm-texto-secundario"></select>
                     <select id="leads-filtro-status" class="p-2 border rounded-md font-medium text-tm-texto-secundario"></select>
                     <select id="leads-filtro-unidade" class="p-2 border rounded-md font-medium text-tm-texto-secundario"></select>
